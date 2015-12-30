@@ -1,0 +1,57 @@
+<hr />
+Product name: <%= item.name %> <br />
+Date added: <%= item.createdAt %>
+
+<% if(item.details.length > 0) { %>
+<table>
+  <tr>
+    <th>
+      Price
+    </th>
+    <th>
+      Art. No
+    </th>
+    <th>
+      Code
+    </th>
+    <th>
+      Cbm
+    </th>
+    <th>
+      Qty/Box
+    </th>
+    <th>
+      Created at
+    </th>
+    <th>
+      Card
+    </th>
+  </tr>
+  <% item.details.forEach(function(detail) { %>
+  <tr>
+    <td>
+      <%= detail.price %>
+    </td>
+    <td>
+      <%= detail.artNo %>
+    </td>
+    <td>
+      <%= detail.code %>
+    </td>
+    <td>
+      <%= detail.cbm %>
+    </td>
+    <td>
+      <%= detail.qtyInBox %>
+    </td>
+    <td>
+      <%= detail.createdAt %>
+    </td>
+    <td>
+      <%= detail.card %>
+    </td>
+  </tr>
+  <% }) %>
+</table>
+<% } %>
+<hr/>

@@ -57,4 +57,19 @@ module.exports.routes = {
   'get /auth/:provider/callback': 'AuthController.callback',
   'get /auth/:provider/:action': 'AuthController.callback',
 
+  'get /card': 'CardController.listAll',
+  'get /card/add': 'CardController.addOne',
+  'post /card/add': 'CardController.handleCreate',
+  'get /card/:id': 'CardController.listOne',
+
+  'get /product': 'ProductController.listAll',
+  'get /product/add': 'ProductController.addOne',
+  'post /product/add': 'ProductController.handleCreate',
+  'get /product/:id': 'ProductController.listOne',
+
+  'get /detail': 'DetailController.listAll',
+  'get /detail/add': 'DetailController.addOne',
+  'post /detail/add': 'DetailController.handleCreate',
+  'get /detail/:id': 'DetailController.listOne'
+
 };

@@ -1,0 +1,9 @@
+
+<% data.forEach(function(item) { %>
+<hr />
+<a href="/product/<%= item.id %>">See more</a> <br />
+Product name: <%= item.name %> <br />
+Date added: <%= item.createdAt %>
+
+<hr/>
+<% }) %>

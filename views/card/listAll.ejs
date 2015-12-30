@@ -1,0 +1,15 @@
+
+<% data.forEach(function(item) { %>
+<hr />
+<a href="/card/<%= item.id %>">See more</a> <br />
+  Card number: <%= item.number %> <br />
+  Card company: <%= item.company %> <br />
+  Telephone: <%= item.telephone %> <br />
+  Mobile: <%= item.mobile %> <br />
+  QQ: <%= item.mobile %> <br />
+  Skype: <%= item.skype %> <br />
+  Link to google drive: <%= item.linkToDrive %> <br />
+  Date added: <%= item.createdAt %>
+
+<hr/>
+<% }) %>
